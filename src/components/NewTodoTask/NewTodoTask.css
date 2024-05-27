@@ -1,7 +1,7 @@
 button {
   --border: 5px; /* the border width */
   --slant: 0.7em; /* control the slanted corners */
-  --color: #000000; /* the color */
+  --color: #fffefe; /* the color */
 
   font-size: 20px;
   padding: 0.4em 1.2em;
@@ -15,7 +15,7 @@ button {
   background-size: calc(var(--slant) + 1.3 * var(--border))
     calc(var(--slant) + 1.3 * var(--border));
   background-repeat: no-repeat;
-  box-shadow: 0 0 0 200px inset var(--s, #0000),
+  box-shadow: 0 0 0 200px inset var(--s, #ffffff00),
     0 0 0 var(--border) inset var(--color);
   clip-path: polygon(
     0 0,
@@ -29,7 +29,7 @@ button {
 }
 button:focus-visible {
   outline-offset: calc(-1 * var(--border));
-  outline: var(--border) solid #000c;
+  outline: var(--border) solid rgba(255, 255, 255, 0.8);
   clip-path: none;
   background-size: 0 0;
 }
@@ -40,7 +40,7 @@ button:active {
   --t: 0.2s 0.1s;
 }
 button:active {
-  --s: #0005;
+  --s: rgb(255, 255, 255);
   transition: none;
 }
 
@@ -74,7 +74,7 @@ button:active {
 
 .input-container > div > input {
   min-width: 50%;
-  border: #000000 3px solid;
+  border: #ffffff 3px solid;
   font-size: 2rem;
   border-radius: 5px;
 }
