@@ -1,5 +1,5 @@
 body {
-  background: url('./src/assets/wallpaper.png') no-repeat center center fixed;
+  background: url('../src/assets/wallpaper.png') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
   font-family: 'Star Jedi', Arial, sans-serif;
